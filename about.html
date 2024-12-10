@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/P_LogosF.png">
+    <title>MassivaTek - Sobre Nós</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/Logo__Branco.png" alt="logoMassivaTek"></a>
+    
+            <!-- Input para controlar o menu -->
+            <input type="checkbox" id="menuToggle" class="menu-toggle">
+    
+            <!-- Label que funciona como botão de abrir/fechar -->
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i> <!-- Ícone de abrir (☰) -->
+                <i class="fa fa-times"></i> <!-- Ícone de fechar (X) -->
+            </label>
+    
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">NÓS</a></li>
+                    <li><a href="solutions.html">SOLUÇÕES</a></li>
+                    <li><a href="careers.html">CARREIRAS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Sobre Nós</h1>
+    </section>
+
+    <section class="about">
+        <div class="about-info">
+            <div class="about-img">
+                <img src="img/G_LogocF.png" alt="MassivaTek">
+            </div>
+            <div>
+            <h1>MassivaTek</h1>
+            <p> Na Massivatek, acreditamos que a tecnologia deve ser uma aliada na construção de um futuro
+                mais conectado e produtivo. A nossa missão é oferecer soluções digitais que potencializam o
+                crescimento de empresas e simplificam o dia a dia dos nossos clientes, dedicando-nos a
+                proporcionar um atendimento de excelência e a entregar projetos com qualidade e eficiência.
+                Com um portfólio diversificado que abrange, desde desenvolvimento de software e consultoria
+                em TI até suporte técnico, buscamos sempre atender às necessidades específicas de cada
+                cliente.
+            </p>
+            </div>
+        </div>
+    </section>
+    <h1 class="tit_MV">Missão e Valores</h1>
+    <p class="p_MV">Na MassivaTek, acreditamos que o esforço e a responsabilidade são fundamentais para
+        garantir a qualidade dos nossos serviços. Comprometemo-nos a oferecer excelência em cada
+        projeto, sempre focados em ajudar os nossos clientes a conquistar uma presença formidável
+        na internet.</p>
+    <div class="containers">
+        <div class="card">
+            <figure>
+                <img src="img/missao.jpg" alt="missao">
+            </figure>
+            <div class="contenido">
+                <h3>Missão</h3>
+                <p>Ajudar os nossos clientes a ter uma boa presença na internet</p>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/valores.jpg" alt="valores">
+            </figure>
+            <div class="contenido">
+                <h3>Valores</h3>
+                <p>Esforço, Responsabilidade, Qualidade, Excelência e Compromisso</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="footer-content">
+            <img  class="img-logofooter" src="img/Logo__Branco.png" alt="logo-MassivaTek">
+
+            <div class="icons">
+                <a href="https://www.instagram.com/massivatek/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/massiva-tek-a63439331/"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <p>MassivaTek © 2024</p>
+        </div>
+        <div class="footer-content">
+            <h4>Empresa</h4>
+            <li><a href="">Nós</a></li>
+            <li><a href="">Soluções</a></li>
+            <li><a href="">Carreiras</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Ajuda</h4>
+            <li><a href="">Política de Privacidade</a></li>
+            <li><a href="">FAQs</a></li>
+        </div>
+    </section>
+
+
+<!------Codigo javascript------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const menuIcon = document.querySelector('nav .fa');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+
+
+</body>
+</html>
