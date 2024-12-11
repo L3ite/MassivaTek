@@ -121,7 +121,7 @@ nav .menu-icon {
 
 /* Responsividade */
 @media (max-width: 1200px) {
-    .text-box h1 {
+    .text-box {
         font-size: 8vw;
     }
 }
