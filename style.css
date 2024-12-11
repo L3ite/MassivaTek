@@ -624,6 +624,7 @@ main.cards section.card.divulgacao {
 .jobs-list-container{
     max-width: 900px;
     margin: 20px auto;
+    gap: 24px;
 }
 
 .jobs-list-container h2{
@@ -633,6 +634,18 @@ main.cards section.card.divulgacao {
 }
 
 .jobs-list-container .jobs {
-    display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.jobs-list-container .job {
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    transition: all 400ms ease;
+}
+
+.jobs-list-container .job:hover {
+    transform: scale(1.03);
 }
